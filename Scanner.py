@@ -38,5 +38,6 @@ elif response == '3':
 	print("IP Status: ", scanner[ip_address].state())
 	print(scanner[ip_address].all_protocols())
 	print("Open Ports: ", scanner[ip_address]['tcp'].keys())
+	print("Operating System: ", scanner[ip_address]['osmatch'][0])
 else:
 	print("Please enter a valid option")
